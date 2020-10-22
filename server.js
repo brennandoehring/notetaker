@@ -1,14 +1,13 @@
 const express = require('express');
 const path = require('path');
 const fs = require('fs');
-const bodyParser = require('body-parser');
 const { v4: uuidv1 } = require('uuid');
 const { urlencoded } = require('express');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-//set up body parsing and static files
+// Set up body parsing and static files
 app.use(express.json());
 app.use(urlencoded({extended: true}));
 app.use(express.static("public"));
@@ -24,12 +23,9 @@ app.get('/api/notes', (req, res) => {
 
 // POST Request
 app.post('/api/notes', (req, res) => {
-    
-
     fs.readFile('db/db.json', "utf8", (err, data) => {
         if (err) throw err;
-           let arr = JSON.parse(data)
-           
+        let arr = JSON.parse(data);
         let userNote = {
             title: req.body.title,
             text: req.body.text,
@@ -40,7 +36,6 @@ app.post('/api/notes', (req, res) => {
          res.json(userNote);
     });  
 });
-
 
 app.delete("/api/notes/:id", (req, res) => {
     console.log(req.params.id)
