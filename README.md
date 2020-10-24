@@ -2,6 +2,8 @@
   # Express Notetaker
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+  https://expressnotetakerbdd.herokuapp.com/
+
   ## Table of Contents
   - [Description](https://github.com/brennandoehring/notetaker#description)
   - [Installation](https://github.com/brennandoehring/notetaker#installation)
@@ -29,4 +31,4 @@
   If you have any questions please contact me at nannerbdale@gmail.com. My github profile username is brennandoehring.
 
   ## Screenshots/Videos/GIFs
-  
+  ![Screenshot](/assets/screenshot.jpeg?raw=true)
