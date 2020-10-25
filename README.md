@@ -31,4 +31,5 @@
   If you have any questions please contact me at nannerbdale@gmail.com. My github profile username is brennandoehring.
 
   ## Screenshots/Videos/GIFs
+  YouTube video example: https://youtu.be/m4aAgdR_7rE
   ![Screenshot](/assets/screenshot.jpeg?raw=true)
